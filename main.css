@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+html, body {
+	height: 100%;
+	background: radial-gradient(#35383b, #282a2c);
+}
+
+#menu {
+	font-family: 'Quicksand', sans-serif;
+	color: #242424;
+	margin: 15px auto;
+	position: fixed;
+	width: 100%;
+	z-index: 70;
+	text-align: right;
+	display: inline-block;
+}
+
+.mainText {
+	font-size: 175px;
+	-webkit-animation: Gradient 7s ease infinite;
+	-moz-animation: Gradient 7s ease infinite;
+	-o-animation: Gradient 7s ease infinite;
+	animation: Gradient 7s ease infinite;
+}
+
+.underMain {
+	font-size: 50px;
+	-webkit-animation: Gradient 7s ease infinite;
+	-moz-animation: Gradient 7s ease infinite;
+	-o-animation: Gradient 7s ease infinite;
+	animation: Gradient 7s ease infinite;
+	bottom: 4pt;
+}
+
+.head {
+	text-align: center;
+	font-size: 50px;
+}
+
+.game {
+	text-align: center;
+	font-size: 25px;
+}
+
+#menu a {
+	text-decoration: underline;
+	color: #242424;
+	transition: 0.15s linear;
+
+	background: linear-gradient(120deg, rgba(252, 255, 0, 1) 0%, rgba(255, 9, 165, 1) 50%);
+	background-size: 300% 300%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+a {
+	text-decoration: underline;
+	color: #242424;
+	transition: 0.15s linear;
+
+	background: linear-gradient(120deg, rgba(252, 255, 0, 1) 0%, rgba(255, 9, 165, 1) 50%);
+	background-size: 300% 300%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+a:hover {
+	opacity: .5;
+}
+
+p {
+	font-family: 'Quicksand', sans-serif;
+	margin: 0;
+	background: linear-gradient(120deg, rgba(252, 255, 0, 1) 0%, rgba(255, 9, 165, 1) 100%);
+	background-size: 200% 200%;
+
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	-webkit-animation: Gradient 7s ease infinite;
+	-moz-animation: Gradient 7s ease infinite;
+	-o-animation: Gradient 7s ease infinite;
+	animation: Gradient 7s ease infinite;
+}
+
+li {
+	display: inline-block;
+	padding-right: 5%;
+	font-size: 32px;
+}
+
+section {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 40px;
+	color: #242424;
+	text-align: center;
+}
+
+footer {
+	font-family: 'Quicksand', sans-serif;
+	background-attachment: scroll;
+	position: fixed;
+	bottom: 4pt;
+	left: 4pt;
+	color: #7e7e7e;
+}
+
+.photos {
+	display: inline;
+	flex-direction: row;
+	text-align: center;
+}
+
+.photos img {
+	border-radius: 50%;
+}
+
+@media screen and (max-width: 1366px) {
+	section nav {
+		font-size: 20px;
+		line-height: 36px;
+		display: inline-flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	li {
+		font-size: 26px
+	}
+
+	p {
+		font-size: 35px
+	}
+
+	section {
+		font-size: 25px
+	}   
+}
+
+@media screen and (max-width: 760px) {
+	li {
+		font-size: 14px
+	}
+
+	section header {
+		font-size: 20px
+	}
+
+	section nav {
+		font-size: 16px;
+		line-height: 36px;
+	}
+
+	footer {
+		font-size: 10px
+	}
+
+	p {
+		font-size: 40px
+	}
+
+	section {
+		font-size: 25px
+	} 
+
+}
+
+@media screen and (max-width: 600px) {
+	li {
+		font-size: 20px
+	}
+
+	section nav {
+		font-size: 14px;
+		line-height: 26px;
+	}
+
+	p {
+		font-size: 35px
+	}
+
+	section {
+		font-size: 30px
+	} 
+}
+
+@-webkit-keyframes Gradient {
+	0%{background-position:100% 0%}
+	50%{background-position:0% 100%}
+	100%{background-position:100% 0%}
+}
+@-moz-keyframes Gradient {
+	0%{background-position:100% 0%}
+	50%{background-position:0% 100%}
+	100%{background-position:100% 0%}
+}
+
+@keyframes Gradient {
+	0%{background-position:80% 20%}
+	50%{background-position:20% 80%}
+	100%{background-position:80% 20%}
+}

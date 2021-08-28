@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css"/>
+		<link rel="stylesheet" href="main.css">
+		<link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
+		<title>Hardel Games</title>
+	</head>
+	<body>
+		<ul id="menu">
+			<li data-menuanchor="home"><a href="#home"><b>Home</b></a></li>
+		 	<li data-menuanchor="about"><a href="#about"><b>About</b></a></li>
+			<li data-menuanchor="contact"><a href="#contact"><b>Contact</b></a></li>
+		</ul>
+		<div id="fullpage">
+			<div data-anchor="home" class="section">
+				<section>
+					<img src="images/logo.png" height="450" alt="Logo">
+				</section>
+			</div>
+			<div data-anchor="about" class="section">
+				<section>
+					<p class="head"><b>About</b></p><br>
+					<p>I'm an indie developer from Russia trying to do something interesting and unusual.<br>
+					Created <a href="https://play.google.com/store/apps/details?id=com.HardelGames.ParticleFight" target="_blank"><b>Particle Fight</b></a>, Next Floor, Hard Pixel.</p>
+				</section>
+			</div>
+			<div data-anchor="contact" class="section">
+				<section>
+					<p class="head"><b>Contact</b></p><br>
+					<p>If you have any suggestions or questions,<br>
+					You can always contact me via social media.<br></p>
+				</section>
+				<br>
+				<section class="photos">
+					<p>
+						<a href="https://vk.com/hardelgames" target="_blank"><img src="images/vk.png" height="75" alt="VK"></a>
+						<a href="https://t.me/l4ine" target="_blank"><img src="images/telegram.png" height="85" alt="TG"></a>
+						<a href="https://twitter.com/hardelgames" target="_blank"><img src="images/twitter.png" height="75" alt="INST"></a>
+					</p>
+				</section>
+			</div>
+		</div>
+		<footer>© 2021 Aslan Hadushkaev</footer>
+		<script>
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					anchors: ['home', 'about', 'contact'],
+					menu: '#menu',
+					scrollingSpeed: 800,
+				});
+			});
+		</script>
+	</body>
+</html>
